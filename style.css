@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+
+    /*colors*/
+    --button-color: #00494D;
+    --text-color: #5E7A7D;
+    --person-color: #7F9C9F;
+    --back-color: #C5E4E7;
+    --back-button: #F4FAFA;
+    --select-color:#26C0AB;
+    --splitter-color: #426567;
+
+    /*fonts*/
+    --font-text: 'Space Mono', monospace;
+
+    /* font accessibility */
+    font-size: 62.5%;
+}
+
+body{
+    background-color: var(--back-color);
+    font-family: var(--font-text);
+}
+
+h1{
+    text-align: center;
+    color: var(--splitter-color);
+    margin-top: 4rem;
+    letter-spacing: 1rem;
+
+}
+
+@media (max-width: 37.5rem){
+
+}
+
+@media (min-width: 37.6rem){
+
+}
