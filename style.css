@@ -14,9 +14,10 @@
     --text-color: #5E7A7D;
     --person-color: #7F9C9F;
     --back-color: #C5E4E7;
-    --back-button: #F4FAFA;
+    --back-button: #e7eded79;
     --select-color:#26C0AB;
     --splitter-color: #426567;
+    --input-text: #015d62;
 
     /*fonts*/
     --font-text: 'Space Mono', monospace;
@@ -35,13 +36,259 @@ h1{
     color: var(--splitter-color);
     margin-top: 4rem;
     letter-spacing: 1rem;
+    padding-bottom: 3rem;
 
 }
 
+main{
+    background-color: white;
+    border-radius: 2rem 2rem 0 0;
+    padding: 3rem 0 3rem 3rem;
+    color: var(--text-color);
+    margin: auto;
+    font-size: 1.3rem;
+}
+
+#bill{
+    background-image: url(images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+input{
+    font-size: 2rem;
+    font-family: var(--font-text);
+    color: var(--input-text);
+    background-color: var(--back-button) ;
+    border-radius: 4px;
+    border-color: transparent;
+}
+
 @media (max-width: 37.5rem){
+main{
+    width: 27.5rem;
+
+}
+
+.label{
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+
+}
+
+#result{
+    padding-top: 2rem;
+}
+
+input{
+    width: 24.5rem;
+    padding: 2px;
+    text-align: right;
+   
+}
+
+#tip{
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+    
+}
+
+.select-tip{
+    background-color: #00494D;
+    margin: 1rem 0;
+    padding: 0.55rem;
+    font-size: 2rem;
+    color: white;
+    border-radius: 0.6rem;
+    width: 12rem;
+    text-align: center;
+    gap: 1rem;
+    border-style: none;
+    font-family: var(--font-text);
+    
+}
+
+#five{
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#ten{
+    grid-column-start: 2;
+    grid-row-start: 1;
+}
+
+#custom{
+    width: 11.4rem;
+    color: var(--splitter-color);
+    height: 3.4rem;
+    margin-top: 1rem;
+    text-align: right;
+}
+
+#people{
+    background-image: url(images/icon-person.svg);
+    background-repeat: no-repeat;
+    background-position: 5%;
+}
+
+
+#result{
+    background-color: #00494D;
+    width: 19rem;
+    margin-top: 2.1rem;
+    padding: 3rem;
+    color: white;
+    height: 14rem;
+    border-radius: 1rem;
+}
+
+.person{
+    color: var(--person-color);
+    font-size: 1.1rem;
+    padding-bottom: 2rem;
+}
+
+#reset{
+    background-color: #26C0AB;
+    color: #00494D;
+    padding: 0.7rem;
+    width: 20rem;
+    position: absolute;
+    top: ;
+    left: 14.3rem;
+    font-family: var(--font-text);
+    font-size: 1.5rem;
+    border-color: transparent;
+    border-radius: 0.5rem;
+}
+
+#res{
+    color: #26C0AB;
+    font-size: 2.1rem;
+    text-align: right;
+    padding: 1rem;
+}
 
 }
 
 @media (min-width: 37.6rem){
+    main{
+        width: 110rem;
+        height: 40rem;
+        display: grid;
+        grid-template-columns: 2;
+    
+    }
+    
+    .label{
+                
+        grid-column-start: 1;
+    
+    }
+    
+    #result{
+        padding-top: 2rem;
+    }
+    
+    input{
+        width: 50rem;
+        padding: 0 2px 2px 2px;
+        text-align: right;
+       
+    }
+    
+       
+    #tip{
+        grid-column-start: 1;
+        display: grid;
+        grid-template-columns: 2;
+        grid-template-rows: 3;
 
+        
+    }
+    
+    .select-tip{
+        background-color: #00494D;
+        margin: 1rem 0;
+        padding: 0.55rem;
+        font-size: 2rem;
+        color: white;
+        border-radius: 0.6rem;
+        width: 12rem;
+        text-align: center;
+        gap: 1rem;
+        border-style: none;
+        font-family: var(--font-text);
+        
+    }
+    
+    #five{
+        grid-column-start: 1;
+        grid-row-start: 1;
+    }
+    
+    #ten{
+        grid-column-start: 2;
+        grid-row-start: 1;
+    }
+    
+    #custom{
+        width: 11.4rem;
+        color: var(--splitter-color);
+        height: 3.4rem;
+        margin-top: 1rem;
+        text-align: right;
+    }
+    
+    #people{
+        background-image: url(images/icon-person.svg);
+        background-repeat: no-repeat;
+        background-position: 5%;
+        grid-column-start: 1;
+    }
+    
+    
+    #result{
+        background-color: #00494D;
+        width: 48rem;
+        margin-top: 2.1rem;
+        padding: 3rem;
+        color: white;
+        height: 14rem;
+        border-radius: 1rem;
+        height: 30rem;
+        position: absolute;
+        left: 76rem;
+    }
+    
+    .person{
+        color: var(--person-color);
+        font-size: 1.1rem;
+        padding-bottom: 2rem;
+    }
+    
+    #reset{
+        background-color: #26C0AB;
+        color: #00494D;
+        padding: 0.7rem;
+        width: 44rem;
+        position: absolute;
+        top: 29rem;
+        left: 5rem;
+        font-family: var(--font-text);
+        font-size: 1.5rem;
+        border-color: transparent;
+        border-radius: 0.5rem;
+    }
+    
+    #res{
+        color: #26C0AB;
+        font-size: 2.1rem;
+        text-align: right;
+        padding: 1rem;
+    }
+    
+    }
 }

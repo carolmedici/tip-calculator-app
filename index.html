@@ -13,27 +13,29 @@
     <h1>SPLI<br>TTER</h1>
 
     <main>
-    <label for="bill">Bill</label>  
-    <input type="number" name="bill" id="bill">
-
-    <label for="tip">Select Tip %</label>
-    <div id="five">5%</div>
-    <div id="ten">10%</div>
-    <div id="fifteen">15%</div>
-    <div id="twentyfive">25%</div> 
-    <div id="fifty">50% </div>
-    <div id="custom">Custom</div>
+    <label class="label" for="bill">Bill</label>  <br>
+    <div><input type="number" name="bill" id="bill"></div>
+    <br>
+    <label class="label" for="tip">Select Tip %</label>
+    <div id="tip">
+        <button class="select-tip" id="five">5%</button>
+        <button class="select-tip" id="ten">10%</button>
+        <button class="select-tip" id="fifteen">15%</button>
+        <button class="select-tip" id="twentyfive">25%</button>
+        <button class="select-tip" id="fifty">50% </button>
+        <input type="number" name="custom" id="custom" placeholder="Custom"> </input>
+    </div>
      
-    <label for="people">Number of People</label> 
-    <input type="number" name="people" id="people">
+    <label class="label" for="people">Number of People</label> 
+    <div><input type="number" name="people" id="people" min="1"></div>
 
     <div id="result">
         <p class="totalt">Tip Amount</p>
-        <p class="person">/ person</p>
+        <p class="person">/ person <div id="tip-amount"></div></p>
         <p class="total">Total</p>
-        <p class="person">/ person</p>
+        <p class="person">/ person <div id="total-person" ></div></p>
 
-        <button type="reset">RESET</button>
+        <button id="reset" type="reset">RESET</button>
     </div>
 </main>
 </body>
