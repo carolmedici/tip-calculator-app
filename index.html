@@ -14,29 +14,31 @@
 
     <main>
     <label class="label" for="bill">Bill</label>  <br>
-    <div><input type="number" name="bill" id="bill"></div>
+    <div class="bill-i"><input type="number" name="bill" id="bill" required onblur="pay()"></div>
     <br>
     <label class="label" for="tip">Select Tip %</label>
     <div id="tip">
-        <button class="select-tip" id="five">5%</button>
-        <button class="select-tip" id="ten">10%</button>
-        <button class="select-tip" id="fifteen">15%</button>
-        <button class="select-tip" id="twentyfive">25%</button>
-        <button class="select-tip" id="fifty">50% </button>
+        <button class="select-tip" id="five" onclick="tipclick()"> 5%</button>
+        <button class="select-tip" id="ten" onclick="tipclick()"> 10%</button>
+        <button class="select-tip" id="fifteen" onclick="tipclick()"> 15%</button>
+        <button class="select-tip" id="twentyfive" onclick="tipclick()"> 25%</button>
+        <button class="select-tip" id="fifty" onclick="tipclick()"> 50% </button>
         <input type="number" name="custom" id="custom" placeholder="Custom"> </input>
     </div>
      
-    <label class="label" for="people">Number of People</label> 
-    <div><input type="number" name="people" id="people" min="1"></div>
+    <label id="label-number" class="label" for="people">Number of People</label> 
+    <div><input type="number" name="people" id="people" min="1" required onblur="pay()"></div>
 
-    <div id="result">
-        <p class="totalt">Tip Amount</p>
-        <p class="person">/ person <div id="tip-amount"></div></p>
+    <div id = "result">
+        <p  class="totalt">Tip Amount</p>
+        <p  class="person">/ person <div id="tip-amount"></div></p>
         <p class="total">Total</p>
         <p class="person">/ person <div id="total-person" ></div></p>
 
         <button id="reset" type="reset">RESET</button>
     </div>
 </main>
+
+<script src="script.js"></script>
 </body>
 </html>

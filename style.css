@@ -42,7 +42,7 @@ h1{
 
 main{
     background-color: white;
-    border-radius: 2rem 2rem 0 0;
+  
     padding: 3rem 0 3rem 3rem;
     color: var(--text-color);
     margin: auto;
@@ -67,6 +67,7 @@ input{
 @media (max-width: 37.5rem){
 main{
     width: 27.5rem;
+    border-radius: 2rem 2rem 0 0;
 
 }
 
@@ -179,6 +180,7 @@ input{
         height: 40rem;
         display: grid;
         grid-template-columns: 2;
+        border-radius: 2rem;
     
     }
     
@@ -199,26 +201,35 @@ input{
        
     }
     
+    .bill-i{
+        position: absolute;
+        top: 19rem;
+    }
        
     #tip{
         grid-column-start: 1;
         display: grid;
-        grid-template-columns: 2;
-        grid-template-rows: 3;
+        grid-template-columns: 3;
+        grid-template-rows: 2;
+        width: 58.5rem;
 
         
+    }
+
+    #label-number{
+        margin-top: 2rem;
     }
     
     .select-tip{
         background-color: #00494D;
-        margin: 1rem 0;
+        margin: 1rem -10rem 1rem 0;
         padding: 0.55rem;
         font-size: 2rem;
         color: white;
         border-radius: 0.6rem;
-        width: 12rem;
+        width: 15rem;
         text-align: center;
-        gap: 1rem;
+       gap: 0;
         border-style: none;
         font-family: var(--font-text);
         
@@ -233,13 +244,31 @@ input{
         grid-column-start: 2;
         grid-row-start: 1;
     }
+    #fifteen{
+        grid-column-start: 3;
+        grid-row-start: 1;
+    }
+    
+    #twentyfive{
+        grid-column-start: 1;
+        grid-row-start: 2;
+    }
+
+    #fifty{
+        grid-column-start: 2;
+        grid-row-start: 2;
+    }
+    
+
     
     #custom{
-        width: 11.4rem;
+        width: 14rem;
         color: var(--splitter-color);
-        height: 3.4rem;
+        height: 5rem;
         margin-top: 1rem;
-        text-align: right;
+        text-align: center;
+        grid-column-start: 3;
+        grid-row-start: 2;
     }
     
     #people{
@@ -266,7 +295,7 @@ input{
     .person{
         color: var(--person-color);
         font-size: 1.1rem;
-        padding-bottom: 2rem;
+        padding-bottom: 5rem;
     }
     
     #reset{
@@ -289,6 +318,27 @@ input{
         text-align: right;
         padding: 1rem;
     }
+
     
-    }
+    
+#tip-amount{
+    font-size: 2.5rem;
+    color: var(--select-color);
+    text-align: right;
+    position: absolute;
+    right: 5rem;
+    top: 3rem;
 }
+
+#total-person{
+    font-size: 2.5rem;
+    color: var(--select-color);
+    text-align: right;
+    position: absolute;
+    right: 5rem;
+    top: 12rem;
+
+}
+
+
+    }
