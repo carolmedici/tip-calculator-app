@@ -172,6 +172,25 @@ input{
     padding: 1rem;
 }
 
+#tip-amount{
+    font-size: 2rem;
+    color: var(--select-color);
+    text-align: right;
+    position: absolute;
+    right: 14rem;
+    top: 55rem;
+}
+
+#total-person{
+    font-size: 2rem;
+    color: var(--select-color);
+    text-align: right;
+    position: absolute;
+    right: 14rem;
+    top: 60.5rem;
+
+}
+
 }
 
 @media (min-width: 37.6rem){
