@@ -28,16 +28,18 @@ click1.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
+
+
 
 /*resA.toFixed(2)
 resA.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})
 resT.toFixed(2)
 resT.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})*/
 }
-})
-
+}
+)
 
 click2.addEventListener("click", function(){
 
@@ -52,8 +54,8 @@ click2.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
 }
 })
 
@@ -70,8 +72,8 @@ click3.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
 }
 })
 
@@ -89,8 +91,8 @@ click4.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
 }
 })
 
@@ -107,8 +109,8 @@ click5.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
 }
 })
 
@@ -125,12 +127,23 @@ custom.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip
-resT.innerHTML = "R$  " + res1
+resA.innerHTML = "R$  " + tip.toFixed(2);
+resT.innerHTML = "R$  " + res1.toFixed(2);
 }
 })
 
 
+
 }
+
+function reset(){
+    document.getElementById('bill').value = ''
+    document.getElementById('people').value = ''
+    document.getElementById('custom').value = ''
+    document.getElementById('tip-amount').innerHTML = 'R$ 0,00'
+    document.getElementById('total-person').innerHTML = 'R$ 0,00'
+}
+
+
 
 
