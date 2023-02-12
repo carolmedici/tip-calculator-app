@@ -22,7 +22,7 @@ click1.addEventListener("click", function(){
     }  else{
         let bill = Number(fbill.value)
         let people = Number(fpeople.value)
-        click1.style.backgroundColor = '#26C0AB';
+        click1.style.backgroundColor = 'var(--select-color)';
         tip =  Number(bill * (5/100))
     
 let resA = document.querySelector('div#tip-amount')
@@ -32,11 +32,6 @@ resA.innerHTML = "R$  " + tip.toFixed(2);
 resT.innerHTML = "R$  " + res1.toFixed(2);
 
 
-
-/*resA.toFixed(2)
-resA.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})
-resT.toFixed(2)
-resT.toLocaleString ('pt-BR', {style: 'currency', currency: 'BRL'})*/
 }
 }
 )
@@ -48,7 +43,7 @@ click2.addEventListener("click", function(){
     }  else{
         let bill = Number(fbill.value)
         let people = Number(fpeople.value)
-        click2.style.backgroundColor = '#26C0AB';
+        click2.style.backgroundColor = 'var(--select-color)';
         tip =  Number(bill * (10/100))
     
 let resA = document.querySelector('div#tip-amount')
@@ -66,7 +61,7 @@ click3.addEventListener("click", function(){
     }  else{
         let bill = Number(fbill.value)
         let people = Number(fpeople.value)
-        click3.style.backgroundColor = '#26C0AB';
+        click3.style.backgroundColor = 'var(--select-color)';
         tip =  Number(bill * (15/100))
     
 let resA = document.querySelector('div#tip-amount')
@@ -85,7 +80,7 @@ click4.addEventListener("click", function(){
     }  else{
         let bill = Number(fbill.value)
         let people = Number(fpeople.value)
-        click4.style.backgroundColor = '#26C0AB';
+        click4.style.backgroundColor = 'var(--select-color)';
         tip =  Number(bill * (25/100))
     
 let resA = document.querySelector('div#tip-amount')
@@ -103,7 +98,7 @@ click5.addEventListener("click", function(){
     }  else{
         let bill = Number(fbill.value)
         let people = Number(fpeople.value)
-        click5.style.backgroundColor = '#26C0AB';
+        click5.style.backgroundColor = 'var(--select-color)';
         tip =  Number(bill * (50/100))
     
 let resA = document.querySelector('div#tip-amount')
@@ -145,5 +140,26 @@ function reset(){
 }
 
 
+
+function setColor(themeName) {
+    localStorage.setItem('theme', themeName);
+    document.documentElement.className = themeName;
+}
+
+function changeTheme() {
+   if (localStorage.getItem('theme') === 'second-color'){
+       setColor('original-color');
+   } else {
+       setColor('second-color');
+   }
+}
+
+(function () {
+   if (localStorage.getItem('theme') === 'second-color') {
+       setColor('second-color');
+   } else {
+       setColor('original-color');
+   }
+})();
 
 
