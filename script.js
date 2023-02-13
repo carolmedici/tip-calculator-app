@@ -28,8 +28,10 @@ click1.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
+
+
 
 
 }
@@ -49,8 +51,8 @@ click2.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
 }
 })
 
@@ -67,8 +69,8 @@ click3.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
 }
 })
 
@@ -86,8 +88,8 @@ click4.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
 }
 })
 
@@ -104,8 +106,8 @@ click5.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
 }
 })
 
@@ -122,8 +124,8 @@ custom.addEventListener("click", function(){
 let resA = document.querySelector('div#tip-amount')
 let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
-resA.innerHTML = "R$  " + tip.toFixed(2);
-resT.innerHTML = "R$  " + res1.toFixed(2);
+resA.innerHTML = "$  " + tip.toFixed(2);
+resT.innerHTML = "$  " + res1.toFixed(2);
 }
 })
 
@@ -131,15 +133,19 @@ resT.innerHTML = "R$  " + res1.toFixed(2);
 
 }
 
+
+/*reset button*/
+
 function reset(){
     document.getElementById('bill').value = ''
     document.getElementById('people').value = ''
     document.getElementById('custom').value = ''
-    document.getElementById('tip-amount').innerHTML = 'R$ 0,00'
-    document.getElementById('total-person').innerHTML = 'R$ 0,00'
+    document.getElementById('tip-amount').innerHTML = '$ 0.00'
+    document.getElementById('total-person').innerHTML = '$ 0.00'
 }
 
 
+/*changing color theme*/
 
 function setColor(themeName) {
     localStorage.setItem('theme', themeName);
@@ -163,3 +169,15 @@ function changeTheme() {
 })();
 
 
+
+/* changing only the color of the clicked button */
+var currentColor = undefined;
+
+document.querySelectorAll('.select-tip')
+    .forEach(s => s.addEventListener('click', function(event) {
+        if (s == currentColor) return; 
+        if (currentColor) currentColor.style.backgroundColor = 'var(--button-color)';
+        s.style.backgroundColor = 'var(--select-color)';
+        currentColor = s;
+    })
+);
