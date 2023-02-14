@@ -47,6 +47,7 @@ Users should be able to:
 - Responsive Media Queries
 - CSS Grid
 - Mobile-first 
+- JavaScript
 
 ### What I learned
 
