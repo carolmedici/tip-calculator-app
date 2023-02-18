@@ -145,7 +145,7 @@ input{
     border-color: transparent;
 }
 
-@media (max-width: 37.5rem){
+
 main{
     width: 27.5rem;
     border-radius: 2rem 2rem 0 0;
@@ -247,7 +247,7 @@ input{
     width: 20rem;
     position: absolute;
     top: ;
-    left: 14.3rem;
+    left: 5.3rem;
     font-family: var(--font-text);
     font-size: 1.5rem;
     border-color: transparent;
@@ -266,8 +266,8 @@ input{
     color: var(--select-color);
     text-align: right;
     position: absolute;
-    right: 14rem;
-    top: 55rem;
+    right: 2rem;
+    top: 56rem;
 }
 
 #total-person{
@@ -275,14 +275,35 @@ input{
     color: var(--select-color);
     text-align: right;
     position: absolute;
-    right: 14rem;
-    top: 60.5rem;
+    right: 2rem;
+    top: 61.5rem;
 
+}
+
+
+
+@media (min-width: 23rem){
+
+    #reset{
+        left: 9.3rem;
+    }
+
+
+    #tip-amount{
+        right: 8rem;
+        top: 56.5rem;
+
+    }
+
+
+    #total-person{
+        right: 8rem;
+        top: 61.5rem;
 }
 
 }
 
-@media (min-width: 37.6rem){
+@media (min-width: 24rem){
     main{
         width: 110rem;
         height: 40rem;
@@ -304,13 +325,13 @@ input{
                 
         grid-column-start: 1;
         position: relative;
-        top:1rem;
+        top:-2rem;
 
     }
 
     #label-tip{
         position: relative;
-        top:5rem;
+        top:-2rem;
     }
     
     #result{
@@ -336,7 +357,7 @@ input{
         grid-template-rows: 2;
         width: 58.5rem;
         position: relative;
-        bottom: -5rem;
+        bottom: 2rem;
 
         
     }
@@ -344,7 +365,7 @@ input{
     #label-number{
         margin-top: 2rem;
         position: relative;
-        top: 9rem;
+        top: -4rem;
     }
     
     .select-tip{
@@ -404,7 +425,7 @@ input{
         background-position: 5%;
         grid-column-start: 1;
         position: relative;
-        bottom: -10rem;
+        bottom: 4rem;
     }
     
     
@@ -419,7 +440,7 @@ input{
         height: 30rem;
         position: relative;
         right: -53rem;
-        bottom: 27rem;
+        bottom: 39rem;
     }
     
     .person{
