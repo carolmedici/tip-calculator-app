@@ -17,7 +17,7 @@ function tipclick(){
 
 click1.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople.value == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -40,7 +40,7 @@ resT.innerHTML = "$  " + res1.toFixed(2);
 
 click2.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -58,7 +58,7 @@ resT.innerHTML = "$  " + res1.toFixed(2);
 
 click3.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -77,7 +77,7 @@ resT.innerHTML = "$  " + res1.toFixed(2);
 
 click4.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -95,7 +95,7 @@ resT.innerHTML = "$  " + res1.toFixed(2);
 
 click5.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -108,13 +108,14 @@ let resT = document.querySelector('div#total-person')
 let res1 = (bill + tip)/people
 resA.innerHTML = "$  " + tip.toFixed(2);
 resT.innerHTML = "$  " + res1.toFixed(2);
+
 }
 })
 
 
 custom.addEventListener("click", function(){
 
-    if(fbill.value.length <= 0 || fpeople == 0 ){
+    if(fbill.value.length <= 0 || fpeople.value.length === 0 ){
         alert('[ERRO] Valor deve ser maior que 0')
     }  else{
         let bill = Number(fbill.value)
@@ -142,6 +143,9 @@ function reset(){
     document.getElementById('custom').value = ''
     document.getElementById('tip-amount').innerHTML = '$ 0.00'
     document.getElementById('total-person').innerHTML = '$ 0.00'
+    let buttons = document.querySelectorAll('.select-tip')
+    buttons.style.backgroundColor = 'var(--button-color)';
+
 }
 
 
@@ -179,5 +183,6 @@ document.querySelectorAll('.select-tip')
         if (currentColor) currentColor.style.backgroundColor = 'var(--button-color)';
         s.style.backgroundColor = 'var(--select-color)';
         currentColor = s;
+      
     })
 );
