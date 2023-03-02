@@ -138,13 +138,15 @@ resT.innerHTML = "$  " + res1.toFixed(2);
 /*reset button*/
 
 function reset(){
-    document.getElementById('bill').value = ''
+    location.reload();
+    
+    /*document.getElementById('bill').value = ''
     document.getElementById('people').value = ''
     document.getElementById('custom').value = ''
     document.getElementById('tip-amount').innerHTML = '$ 0.00'
     document.getElementById('total-person').innerHTML = '$ 0.00'
     let buttons = document.querySelectorAll('.select-tip')
-    buttons.style.backgroundColor = 'var(--button-color)';
+    buttons.style.backgroundColor = 'var(--button-color)';*/
 
 }
 

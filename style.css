@@ -199,6 +199,11 @@ input{
     
 }
 
+.select-tip:hover{
+    background-color: var(--select-color);
+
+}
+
 #five{
     grid-column-start: 1;
     grid-row-start: 1;
