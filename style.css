@@ -285,6 +285,29 @@ input{
 
 }
 
+@media(min-width:22rem){
+    #reset{
+        left: 8.3rem;
+    }
+
+
+    #tip-amount{
+        right: 8rem;
+        top: 56.5rem;
+
+    }
+
+
+    #total-person{
+        right: 8rem;
+        top: 61.5rem;
+}
+
+}
+   
+
+
+
 
 
 @media (min-width: 23rem){
@@ -317,6 +340,8 @@ input{
         border-radius: 2rem;
     
     }
+
+   
     
     .change {
         position: relative;
